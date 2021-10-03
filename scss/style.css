@@ -1,0 +1,75 @@
+::-webkit-backdrop carousel-inner {
+  max-height: 29rem;
+  padding: 10px;
+}
+
+::backdrop carousel-inner {
+  max-height: 29rem;
+  padding: 10px;
+}
+
+.carousel-inner .item > img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.biografia {
+  text-align: justify;
+  padding: 120px;
+}
+
+.h4 {
+  padding: 120;
+  text-align: right;
+}
+
+.likenny {
+  border-radius: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.linea {
+  background: #550b51;
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+}
+
+.galeria > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px black;
+}
+
+.galeria img {
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.galeria a:hover img {
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
+}/*# sourceMappingURL=style.css.map */
